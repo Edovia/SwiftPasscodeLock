@@ -70,7 +70,6 @@ public class PasscodeSignButton: UIButton {
     }
     
     private func setupActions() {
-        
         addTarget(self, action: #selector(PasscodeSignButton.handleTouchDown), for: .touchDown)
         addTarget(self, action: #selector(PasscodeSignButton.handleTouchUp), for: [.touchUpInside, .touchDragOutside, .touchCancel])
     }

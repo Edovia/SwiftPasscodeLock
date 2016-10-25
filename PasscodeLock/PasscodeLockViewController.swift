@@ -35,7 +35,7 @@ public class PasscodeLockViewController: UIViewController, PasscodeLockTypeDeleg
     @IBOutlet public weak var touchIDButton: UIButton?
     @IBOutlet public weak var placeholdersX: NSLayoutConstraint?
     
-    public var successCallback: ((lock: PasscodeLockType) -> Void)?
+    public var successCallback: ((_ lock: PasscodeLockType) -> Void)?
     public var dismissCompletionCallback: (()->Void)?
     public var animateOnDismiss: Bool
     public var notificationCenter: NotificationCenter?
@@ -112,7 +112,6 @@ public class PasscodeLockViewController: UIViewController, PasscodeLockTypeDeleg
     // MARK: - Events
     
     private func setupEvents() {
-        
         notificationCenter?.addObserver(self, selector: #selector(PasscodeLockViewController.appWillEnterForegroundHandler(_:)), name: NSNotification.Name.UIApplicationWillEnterForeground, object: nil)
         notificationCenter?.addObserver(self, selector: #selector(PasscodeLockViewController.appDidEnterBackgroundHandler(_:)), name: NSNotification.Name.UIApplicationDidEnterBackground, object: nil)
     }
@@ -182,7 +181,7 @@ public class PasscodeLockViewController: UIViewController, PasscodeLockTypeDeleg
         // if pushed in a navigation controller
         } else if navigationController != nil {
         
-            navigationController?.popViewController(animated: animateOnDismiss)
+            _ = navigationController?.popViewController(animated: animateOnDismiss)
         }
         
         dismissCompletionCallback?()
@@ -242,7 +241,7 @@ public class PasscodeLockViewController: UIViewController, PasscodeLockTypeDeleg
         deleteSignButton?.isEnabled = true
         animatePlaceholders(placeholders, toState: .inactive)
         dismissPasscodeLock(lock, completionHandler: { [weak self] _ in
-            self?.successCallback?(lock: lock)
+            self?.successCallback?(lock)
         })
     }
     
