@@ -101,6 +101,17 @@ public class PasscodeLockViewController: UIViewController, PasscodeLockTypeDeleg
         }
     }
     
+    
+    public override var shouldAutorotate: Bool {
+        return self.traitCollection.userInterfaceIdiom == .pad
+    }
+    
+    
+    public override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .portrait
+    }
+    
+    
     internal func updatePasscodeView() {
         
         titleLabel?.text = passcodeLock.state.title
