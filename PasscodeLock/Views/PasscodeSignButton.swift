@@ -74,12 +74,12 @@ public class PasscodeSignButton: UIButton {
         addTarget(self, action: #selector(PasscodeSignButton.handleTouchUp), for: [.touchUpInside, .touchDragOutside, .touchCancel])
     }
     
-    func handleTouchDown() {
+    @objc func handleTouchDown() {
         
         animateBackgroundColor(highlightBackgroundColor)
     }
     
-    func handleTouchUp() {
+    @objc func handleTouchUp() {
         
         animateBackgroundColor(defaultBackgroundColor)
     }
