@@ -34,6 +34,8 @@ public class PasscodeLockViewController: UIViewController, PasscodeLockTypeDeleg
     @IBOutlet public weak var deleteSignButton: UIButton?
     @IBOutlet public weak var touchIDButton: UIButton?
     @IBOutlet public weak var placeholdersX: NSLayoutConstraint?
+    @IBOutlet public weak var placeholdersWidth: NSLayoutConstraint?
+    @IBOutlet public weak var placeholdersHeight: NSLayoutConstraint?
     
     public var successCallback: ((_ lock: PasscodeLockType) -> Void)?
     public var dismissCompletionCallback: (()->Void)?
@@ -88,6 +90,9 @@ public class PasscodeLockViewController: UIViewController, PasscodeLockTypeDeleg
         
         updatePasscodeView()
         deleteSignButton?.isEnabled = false
+        
+        placeholdersWidth?.constant = placeholders[0].intrinsicContentSize.width
+        placeholdersHeight?.constant = placeholders[0].intrinsicContentSize.height
         
         setupEvents()
     }
