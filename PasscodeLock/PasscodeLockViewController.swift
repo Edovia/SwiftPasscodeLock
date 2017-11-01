@@ -7,6 +7,30 @@
 //
 
 import UIKit
+import LocalAuthentication
+
+extension UIDevice {
+    class func supportsFaceID() -> Bool {
+        let context = LAContext.init()
+        var error: NSError?
+        
+        if context.canEvaluatePolicy(LAPolicy.deviceOwnerAuthenticationWithBiometrics, error: &error) {
+            if #available(iOS 11.0, *) {
+                if (context.biometryType == LABiometryType.typeFaceID) {
+                    return true
+                }
+            }
+            else {
+                return false
+            }
+        }
+        
+        if error != nil {
+            print("\(error!)")
+        }
+        return false
+    }
+}
 
 public class PasscodeLockViewController: UIViewController, PasscodeLockTypeDelegate {
     
@@ -93,6 +117,8 @@ public class PasscodeLockViewController: UIViewController, PasscodeLockTypeDeleg
         
         placeholdersWidth?.constant = placeholders[0].intrinsicContentSize.width
         placeholdersHeight?.constant = placeholders[0].intrinsicContentSize.height
+        
+        self.touchIDButton?.setImage(UIImage(named: UIDevice.supportsFaceID() ? "useFaceID" : "useTouchID"), for: .normal)
         
         setupEvents()
     }
