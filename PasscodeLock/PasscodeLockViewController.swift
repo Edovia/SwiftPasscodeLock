@@ -16,7 +16,7 @@ extension UIDevice {
         
         if context.canEvaluatePolicy(LAPolicy.deviceOwnerAuthenticationWithBiometrics, error: &error) {
             if #available(iOS 11.0, *) {
-                if (context.biometryType == LABiometryType.typeFaceID) {
+                if (context.biometryType == LABiometryType.faceID) {
                     return true
                 }
             }
