@@ -70,8 +70,8 @@ public class PasscodeSignButton: UIButton {
     }
     
     private func setupActions() {
-        addTarget(self, action: #selector(PasscodeSignButton.handleTouchDown), for: .touchDown)
-        addTarget(self, action: #selector(PasscodeSignButton.handleTouchUp), for: [.touchUpInside, .touchDragOutside, .touchCancel])
+        addTarget(self, action: #selector(PasscodeSignButton.handleTouchDown), for: UIControl.Event.touchDown)
+        addTarget(self, action: #selector(PasscodeSignButton.handleTouchUp), for: [UIControl.Event.touchUpInside, UIControl.Event.touchDragOutside, UIControl.Event.touchCancel])
     }
     
     @objc func handleTouchDown() {
@@ -91,7 +91,7 @@ public class PasscodeSignButton: UIButton {
             delay: 0.0,
             usingSpringWithDamping: 1,
             initialSpringVelocity: 0.0,
-            options: [.allowUserInteraction, .beginFromCurrentState],
+            options: [UIView.AnimationOptions.allowUserInteraction, UIView.AnimationOptions.beginFromCurrentState],
             animations: {
                 
                 self.backgroundColor = color

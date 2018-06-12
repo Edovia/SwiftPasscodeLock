@@ -456,7 +456,7 @@
 						CreatedOnToolsVersion = 7.0;
 						DevelopmentTeam = F69M46B76S;
 						DevelopmentTeamName = "Edovia Inc.";
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1000;
 					};
 					C99EAF481B90B05700D61E1B = {
 						CreatedOnToolsVersion = 7.0;
@@ -797,8 +797,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -819,8 +818,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
