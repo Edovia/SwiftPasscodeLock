@@ -18,21 +18,21 @@ public class PasscodeSignPlaceholderView: UIView {
     }
     
     @IBInspectable
-    public var inactiveColor: UIColor = UIColor.white {
+    public var inactiveColor: UIColor = UIColor.clear {
         didSet {
             setupView()
         }
     }
     
     @IBInspectable
-    public var activeColor: UIColor = UIColor.gray {
+    public var activeColor: UIColor = UIColor.systemBlue {
         didSet {
             setupView()
         }
     }
     
     @IBInspectable
-    public var errorColor: UIColor = UIColor.red {
+    public var errorColor: UIColor = UIColor.systemRed {
         didSet {
             setupView()
         }
