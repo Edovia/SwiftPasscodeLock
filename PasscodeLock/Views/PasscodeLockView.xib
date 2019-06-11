@@ -415,7 +415,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ULR-wa-6ZW">
-                    <rect key="frame" x="172" y="604" width="31" height="31"/>
+                    <rect key="frame" x="156.5" y="573" width="62" height="62"/>
                     <color key="tintColor" name="screensTintColor"/>
                     <state key="normal" image="useFaceID">
                         <color key="titleColor" name="screensTintColor"/>
