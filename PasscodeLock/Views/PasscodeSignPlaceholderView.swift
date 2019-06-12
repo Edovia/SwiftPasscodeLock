@@ -55,12 +55,26 @@ public class PasscodeSignPlaceholderView: UIView {
         return CGSize(width: 16, height: 16)
     }
     
+    
+    public override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+        
+        if traitCollection.hasDifferentColorAppearance(comparedTo: previousTraitCollection) {
+            self.setupView()
+        }
+    }
+    
     private func setupView() {
+        let savedTc = UITraitCollection.current
+        
+        UITraitCollection.current = traitCollection
         
         layer.cornerRadius = 8
         layer.borderWidth = 1
         layer.borderColor = activeColor.cgColor
         backgroundColor = inactiveColor
+        
+        UITraitCollection.current = savedTc
     }
     
     private func colorsForState(_ state: State) -> (backgroundColor: UIColor, borderColor: UIColor) {
@@ -83,10 +97,14 @@ public class PasscodeSignPlaceholderView: UIView {
             initialSpringVelocity: 0,
             options: [],
             animations: {
+                let savedTc = UITraitCollection.current
+                
+                UITraitCollection.current = self.traitCollection
                 
                 self.backgroundColor = colors.backgroundColor
                 self.layer.borderColor = colors.borderColor.cgColor
                 
+                UITraitCollection.current = savedTc
             },
             completion: nil
         )

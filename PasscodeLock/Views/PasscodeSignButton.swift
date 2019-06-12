@@ -57,24 +57,29 @@ public class PasscodeSignButton: UIButton {
     
     
     public override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
-        // Required for Dark Mode
         super.traitCollectionDidChange(previousTraitCollection)
-        self.setupView()
+        
+        if traitCollection.hasDifferentColorAppearance(comparedTo: previousTraitCollection) {
+            self.setupView()
+        }
     }
     
     
     private var defaultBackgroundColor = UIColor.clear
     
     private func setupView() {
+        let savedTc = UITraitCollection.current
+        
+        UITraitCollection.current = traitCollection
         
         layer.borderWidth = 1
         layer.cornerRadius = borderRadius
         layer.borderColor = borderColor.cgColor
         
         if let backgroundColor = backgroundColor {
-            
             defaultBackgroundColor = backgroundColor
         }
+        UITraitCollection.current = savedTc
     }
     
     private func setupActions() {
