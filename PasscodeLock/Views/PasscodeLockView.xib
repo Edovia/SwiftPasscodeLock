@@ -55,11 +55,11 @@
                                 <userDefinedRuntimeAttribute type="color" keyPath="errorColor">
                                     <color key="value" cocoaTouchSystemColor="systemRedColor"/>
                                 </userDefinedRuntimeAttribute>
-                                <userDefinedRuntimeAttribute type="color" keyPath="activeColor">
-                                    <color key="value" name="screensTintColor"/>
-                                </userDefinedRuntimeAttribute>
                                 <userDefinedRuntimeAttribute type="color" keyPath="inactiveColor">
                                     <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="activeColor">
+                                    <color key="value" xcode11CocoaTouchSystemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </view>
@@ -70,11 +70,11 @@
                                 <userDefinedRuntimeAttribute type="color" keyPath="errorColor">
                                     <color key="value" cocoaTouchSystemColor="systemRedColor"/>
                                 </userDefinedRuntimeAttribute>
-                                <userDefinedRuntimeAttribute type="color" keyPath="activeColor">
-                                    <color key="value" name="screensTintColor"/>
-                                </userDefinedRuntimeAttribute>
                                 <userDefinedRuntimeAttribute type="color" keyPath="inactiveColor">
-                                    <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="activeColor">
+                                    <color key="value" xcode11CocoaTouchSystemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </view>
@@ -85,11 +85,11 @@
                                 <userDefinedRuntimeAttribute type="color" keyPath="errorColor">
                                     <color key="value" cocoaTouchSystemColor="systemRedColor"/>
                                 </userDefinedRuntimeAttribute>
-                                <userDefinedRuntimeAttribute type="color" keyPath="activeColor">
-                                    <color key="value" name="screensTintColor"/>
-                                </userDefinedRuntimeAttribute>
                                 <userDefinedRuntimeAttribute type="color" keyPath="inactiveColor">
-                                    <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="activeColor">
+                                    <color key="value" xcode11CocoaTouchSystemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </view>
@@ -100,11 +100,11 @@
                                 <userDefinedRuntimeAttribute type="color" keyPath="errorColor">
                                     <color key="value" cocoaTouchSystemColor="systemRedColor"/>
                                 </userDefinedRuntimeAttribute>
-                                <userDefinedRuntimeAttribute type="color" keyPath="activeColor">
-                                    <color key="value" name="screensTintColor"/>
-                                </userDefinedRuntimeAttribute>
                                 <userDefinedRuntimeAttribute type="color" keyPath="inactiveColor">
-                                    <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="activeColor">
+                                    <color key="value" xcode11CocoaTouchSystemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </view>
@@ -134,7 +134,7 @@
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="21"/>
                     <color key="tintColor" name="screensTintColor"/>
                     <state key="normal" title="1">
-                        <color key="titleColor" name="screensTintColor"/>
+                        <color key="titleColor" xcode11CocoaTouchSystemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                     </state>
                     <state key="selected">
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -143,13 +143,13 @@
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="passcodeSign" value="1"/>
                         <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                            <color key="value" name="screensTintColor"/>
+                            <color key="value" xcode11CocoaTouchSystemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="color" keyPath="highlightBackgroundColor">
-                            <color key="value" name="screensTintColor"/>
+                            <color key="value" cocoaTouchSystemColor="secondaryLabelColor"/>
                         </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="string" keyPath="passcodeSign" value="1"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <action selector="passcodeSignButtonTap:" destination="-1" eventType="touchUpInside" id="KdD-eG-uGQ"/>
@@ -160,7 +160,7 @@
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="21"/>
                     <color key="tintColor" name="screensTintColor"/>
                     <state key="normal" title="2">
-                        <color key="titleColor" name="screensTintColor"/>
+                        <color key="titleColor" xcode11CocoaTouchSystemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                     </state>
                     <state key="selected">
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -169,13 +169,13 @@
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="passcodeSign" value="2"/>
                         <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                            <color key="value" name="screensTintColor"/>
+                            <color key="value" xcode11CocoaTouchSystemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="color" keyPath="highlightBackgroundColor">
-                            <color key="value" name="screensTintColor"/>
+                            <color key="value" cocoaTouchSystemColor="secondaryLabelColor"/>
                         </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="string" keyPath="passcodeSign" value="2"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <action selector="passcodeSignButtonTap:" destination="-1" eventType="touchUpInside" id="BNz-Qp-TcT"/>
@@ -186,7 +186,7 @@
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="21"/>
                     <color key="tintColor" name="screensTintColor"/>
                     <state key="normal" title="3">
-                        <color key="titleColor" name="screensTintColor"/>
+                        <color key="titleColor" xcode11CocoaTouchSystemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                     </state>
                     <state key="selected">
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -195,13 +195,13 @@
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="passcodeSign" value="3"/>
                         <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                            <color key="value" name="screensTintColor"/>
+                            <color key="value" xcode11CocoaTouchSystemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="color" keyPath="highlightBackgroundColor">
-                            <color key="value" name="screensTintColor"/>
+                            <color key="value" cocoaTouchSystemColor="secondaryLabelColor"/>
                         </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="string" keyPath="passcodeSign" value="3"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <action selector="passcodeSignButtonTap:" destination="-1" eventType="touchUpInside" id="kQR-ai-KbC"/>
@@ -212,7 +212,7 @@
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="21"/>
                     <color key="tintColor" name="screensTintColor"/>
                     <state key="normal" title="4">
-                        <color key="titleColor" name="screensTintColor"/>
+                        <color key="titleColor" xcode11CocoaTouchSystemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                     </state>
                     <state key="selected">
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -221,13 +221,13 @@
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="passcodeSign" value="4"/>
                         <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                            <color key="value" name="screensTintColor"/>
+                            <color key="value" xcode11CocoaTouchSystemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="color" keyPath="highlightBackgroundColor">
-                            <color key="value" name="screensTintColor"/>
+                            <color key="value" cocoaTouchSystemColor="secondaryLabelColor"/>
                         </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="string" keyPath="passcodeSign" value="4"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <action selector="passcodeSignButtonTap:" destination="-1" eventType="touchUpInside" id="zM7-Dp-6zV"/>
@@ -238,7 +238,7 @@
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="21"/>
                     <color key="tintColor" name="screensTintColor"/>
                     <state key="normal" title="5">
-                        <color key="titleColor" name="screensTintColor"/>
+                        <color key="titleColor" xcode11CocoaTouchSystemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                     </state>
                     <state key="selected">
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -247,13 +247,13 @@
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="passcodeSign" value="5"/>
                         <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                            <color key="value" name="screensTintColor"/>
+                            <color key="value" xcode11CocoaTouchSystemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="color" keyPath="highlightBackgroundColor">
-                            <color key="value" name="screensTintColor"/>
+                            <color key="value" cocoaTouchSystemColor="secondaryLabelColor"/>
                         </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="string" keyPath="passcodeSign" value="5"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <action selector="passcodeSignButtonTap:" destination="-1" eventType="touchUpInside" id="MdT-sz-gVU"/>
@@ -264,7 +264,7 @@
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="21"/>
                     <color key="tintColor" name="screensTintColor"/>
                     <state key="normal" title="6">
-                        <color key="titleColor" name="screensTintColor"/>
+                        <color key="titleColor" xcode11CocoaTouchSystemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                     </state>
                     <state key="selected">
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -273,13 +273,13 @@
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="passcodeSign" value="6"/>
                         <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                            <color key="value" name="screensTintColor"/>
+                            <color key="value" xcode11CocoaTouchSystemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="color" keyPath="highlightBackgroundColor">
-                            <color key="value" name="screensTintColor"/>
+                            <color key="value" cocoaTouchSystemColor="secondaryLabelColor"/>
                         </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="string" keyPath="passcodeSign" value="6"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <action selector="passcodeSignButtonTap:" destination="-1" eventType="touchUpInside" id="Gh8-TY-9A6"/>
@@ -290,7 +290,7 @@
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="21"/>
                     <color key="tintColor" name="screensTintColor"/>
                     <state key="normal" title="7">
-                        <color key="titleColor" name="screensTintColor"/>
+                        <color key="titleColor" xcode11CocoaTouchSystemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                     </state>
                     <state key="selected">
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -299,13 +299,13 @@
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="passcodeSign" value="7"/>
                         <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                            <color key="value" name="screensTintColor"/>
+                            <color key="value" xcode11CocoaTouchSystemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="color" keyPath="highlightBackgroundColor">
-                            <color key="value" name="screensTintColor"/>
+                            <color key="value" cocoaTouchSystemColor="secondaryLabelColor"/>
                         </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="string" keyPath="passcodeSign" value="7"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <action selector="passcodeSignButtonTap:" destination="-1" eventType="touchUpInside" id="CXU-r8-oI2"/>
@@ -316,7 +316,7 @@
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="21"/>
                     <color key="tintColor" name="screensTintColor"/>
                     <state key="normal" title="8">
-                        <color key="titleColor" name="screensTintColor"/>
+                        <color key="titleColor" xcode11CocoaTouchSystemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                     </state>
                     <state key="selected">
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -325,13 +325,13 @@
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="passcodeSign" value="8"/>
                         <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                            <color key="value" name="screensTintColor"/>
+                            <color key="value" xcode11CocoaTouchSystemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="color" keyPath="highlightBackgroundColor">
-                            <color key="value" name="screensTintColor"/>
+                            <color key="value" cocoaTouchSystemColor="secondaryLabelColor"/>
                         </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="string" keyPath="passcodeSign" value="8"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <action selector="passcodeSignButtonTap:" destination="-1" eventType="touchUpInside" id="JDk-Cb-MWh"/>
@@ -342,7 +342,7 @@
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="21"/>
                     <color key="tintColor" name="screensTintColor"/>
                     <state key="normal" title="9">
-                        <color key="titleColor" name="screensTintColor"/>
+                        <color key="titleColor" xcode11CocoaTouchSystemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                     </state>
                     <state key="selected">
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -351,13 +351,13 @@
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="passcodeSign" value="9"/>
                         <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                            <color key="value" name="screensTintColor"/>
+                            <color key="value" xcode11CocoaTouchSystemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="color" keyPath="highlightBackgroundColor">
-                            <color key="value" name="screensTintColor"/>
+                            <color key="value" cocoaTouchSystemColor="secondaryLabelColor"/>
                         </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="string" keyPath="passcodeSign" value="9"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <action selector="passcodeSignButtonTap:" destination="-1" eventType="touchUpInside" id="aJD-gJ-Fvd"/>
@@ -368,7 +368,7 @@
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="21"/>
                     <color key="tintColor" name="screensTintColor"/>
                     <state key="normal" title="0">
-                        <color key="titleColor" name="screensTintColor"/>
+                        <color key="titleColor" xcode11CocoaTouchSystemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                     </state>
                     <state key="selected">
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -377,13 +377,13 @@
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="passcodeSign" value="0"/>
                         <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                            <color key="value" name="screensTintColor"/>
+                            <color key="value" xcode11CocoaTouchSystemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="color" keyPath="highlightBackgroundColor">
-                            <color key="value" name="screensTintColor"/>
+                            <color key="value" cocoaTouchSystemColor="secondaryLabelColor"/>
                         </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="string" keyPath="passcodeSign" value="0"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <action selector="passcodeSignButtonTap:" destination="-1" eventType="touchUpInside" id="lGc-z4-PyQ"/>
@@ -391,10 +391,9 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="etg-x7-Mx1">
                     <rect key="frame" x="89.5" y="480.5" width="56" height="26"/>
-                    <color key="tintColor" name="screensTintColor"/>
                     <inset key="contentEdgeInsets" minX="4" minY="4" maxX="4" maxY="4"/>
                     <state key="normal" title="Cancel">
-                        <color key="titleColor" name="screensTintColor"/>
+                        <color key="titleColor" xcode11CocoaTouchSystemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                     </state>
                     <connections>
                         <action selector="cancelButtonTap:" destination="-1" eventType="touchUpInside" id="zLU-i4-B3I"/>
@@ -402,10 +401,9 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H78-kl-y6L">
                     <rect key="frame" x="231" y="480.5" width="53" height="26"/>
-                    <color key="tintColor" name="screensTintColor"/>
                     <inset key="contentEdgeInsets" minX="4" minY="4" maxX="4" maxY="4"/>
                     <state key="normal" title="Delete">
-                        <color key="titleColor" name="screensTintColor"/>
+                        <color key="titleColor" xcode11CocoaTouchSystemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                     </state>
                     <state key="disabled">
                         <color key="titleColor" red="0.78967124223709106" green="0.83030849695205688" blue="0.94253647327423096" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -415,10 +413,9 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ULR-wa-6ZW">
-                    <rect key="frame" x="156.5" y="573" width="62" height="62"/>
-                    <color key="tintColor" name="screensTintColor"/>
+                    <rect key="frame" x="172" y="604" width="31" height="31"/>
                     <state key="normal" image="useFaceID">
-                        <color key="titleColor" name="screensTintColor"/>
+                        <color key="titleColor" xcode11CocoaTouchSystemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                     </state>
                     <connections>
                         <action selector="touchIDButtonTap:" destination="-1" eventType="touchUpInside" id="ojE-lp-d7L"/>
@@ -426,7 +423,6 @@
                 </button>
             </subviews>
             <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-            <color key="tintColor" name="screensTintColor"/>
             <constraints>
                 <constraint firstItem="0CR-0R-0Nr" firstAttribute="centerX" secondItem="PbJ-Y8-MMf" secondAttribute="centerX" id="16E-tM-5HY"/>
                 <constraint firstItem="cuq-ue-Jyj" firstAttribute="top" secondItem="CGh-ph-49t" secondAttribute="top" id="1pk-a8-KUM"/>

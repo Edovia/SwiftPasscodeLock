@@ -55,6 +55,14 @@ public class PasscodeSignButton: UIButton {
         return CGSize(width: 60, height: 60)
     }
     
+    
+    public override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        // Required for Dark Mode
+        super.traitCollectionDidChange(previousTraitCollection)
+        self.setupView()
+    }
+    
+    
     private var defaultBackgroundColor = UIColor.clear
     
     private func setupView() {
