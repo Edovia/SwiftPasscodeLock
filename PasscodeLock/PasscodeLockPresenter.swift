@@ -53,6 +53,7 @@ public class PasscodeLockPresenter {
         let passcodeLockVC = PasscodeLockViewController(state: .enterPasscode, configuration: passcodeConfiguration)
         let userDismissCompletionCallback = passcodeLockVC.dismissCompletionCallback
         
+        passcodeLockVC.modalPresentationStyle = .fullScreen
         passcodeLockVC.dismissCompletionCallback = { [weak self] in
             
             userDismissCompletionCallback?()
@@ -61,8 +62,9 @@ public class PasscodeLockPresenter {
             
             completion?()
         }
-        
         self.passcodeLockWindow?.rootViewController = passcodeLockVC
+        
+        mainWindow?.rootViewController?.present(passcodeLockVC, animated: false, completion: nil)
     }
     
     public func dismissPasscodeLock(animated: Bool = true) {
